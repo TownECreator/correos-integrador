@@ -8,7 +8,7 @@ Plataforma empresarial distribuida para la gestión de correo electrónico inter
 ## Video de Presentación del Proyecto (Fase 1)
 - **Enlace al video introductorio y distribución de roles:** [Insertar enlace de YouTube o Loom aquí]
 
-## 🛠️ Arquitectura y Tecnologías
+## Arquitectura y Tecnologías
 - **Aplicación Principal:** Go (Golang) - Cliente-Servidor mediante TCP/Sockets.
 - **Autenticación y Seguridad:** FastAPI (Python), hashing de contraseñas y tokens.
 - **Infraestructura de Red:** OpenWrt (Raspberry Pi), OSPF, VLANs, EtherChannel, RSTP y VLSM.
