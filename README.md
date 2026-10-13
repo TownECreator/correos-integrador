@@ -29,5 +29,8 @@ Plataforma empresarial distribuida para la gestión de correo electrónico inter
 ## Licencia
 Este proyecto se distribuye bajo los términos de la Licencia **MIT**. Para más detalles, consulta el archivo [LICENSE](./LICENSE).
 
+## Vídeo explicativo acerca de roles
+https://youtu.be/6H8S9G2ZL00?si=Lrfr2mipz3l5Dy1w
+
 ## Declaración de Integridad Académica y Uso de IA
 Declaramos que el presente trabajo ha sido desarrollado colaborativamente por el equipo. Se han utilizado herramientas de Inteligencia Artificial (ej. ChatGPT, Gemini) de forma ética y complementaria como apoyo para la redacción de documentación, diseño estructural de código y depuración. La autoría y validación final corresponden íntegramente a las integrantes del grupo.
