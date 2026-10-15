@@ -5,9 +5,6 @@
 ## Descripción del Proyecto
 Plataforma empresarial distribuida para la gestión de correo electrónico interno entre dos sedes operativas interconectadas. La aplicación cliente-servidor está desarrollada en **Go (Golang)** e integrada con un servicio de autenticación segura en **FastAPI**, sobre una infraestructura de red segmentada con VLANs y enrutamiento dinámico **OSPF**.
 
-## Video de Presentación del Proyecto (Fase 1)
-- **Enlace al video introductorio y distribución de roles:** [Insertar enlace de YouTube o Loom aquí]
-
 ## Arquitectura y Tecnologías
 - **Aplicación Principal:** Go (Golang) - Cliente-Servidor mediante TCP/Sockets.
 - **Autenticación y Seguridad:** FastAPI (Python), hashing de contraseñas y tokens.
