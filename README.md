@@ -20,13 +20,6 @@ Operaciones: iniciar sesión, enviar mensajes de texto, consultar bandeja de ent
 - `network/`: direccionamiento IP, topologías y configuraciones de red.
 - `research/`: datos y análisis estadístico.
 
-## Configuración
-| Componente | Sede | IP | Puerto |
-|---|---|---|---|
-| MailServer (Go) | A | [COMPLETAR] | [COMPLETAR] |
-| FastAPI | A | [COMPLETAR] | [COMPLETAR] |
-| MailClient (Go) | B | [COMPLETAR] | no aplica |
-
 ## Cómo ejecutar
 1. **FastAPI** (Sede A):
    `cd auth-service && uvicorn [COMPLETAR] --host 0.0.0.0 --port [PUERTO]`
