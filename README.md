@@ -3,31 +3,59 @@
 *Ingeniería en Sistemas de Información - Universidad Internacional del Ecuador (UIDE)*
 
 ## Descripción del Proyecto
-Plataforma empresarial distribuida para la gestión de correo electrónico interno entre dos sedes operativas interconectadas. La aplicación cliente-servidor está desarrollada en **Go (Golang)** e integrada con un servicio de autenticación segura en **FastAPI**, sobre una infraestructura de red segmentada con VLANs y enrutamiento dinámico **OSPF**.
+Plataforma de correo interno para dos sedes (A y B) interconectadas, sin depender de SMTP externo. La aplicación cliente-servidor está desarrollada en **Go** y se integra con un servicio de autenticación en **FastAPI**, sobre una red segmentada con VLANs y enrutamiento **OSPF**.
+
+Operaciones: iniciar sesión, enviar mensajes de texto, consultar bandeja de entrada y enviados, leer y eliminar mensajes.
 
 ## Arquitectura y Tecnologías
-- **Aplicación Principal:** Go (Golang) - Cliente-Servidor mediante TCP/Sockets.
-- **Autenticación y Seguridad:** FastAPI (Python), hashing de contraseñas y tokens.
-- **Infraestructura de Red:** OpenWrt (Raspberry Pi), OSPF, VLANs, EtherChannel, RSTP y VLSM.
-- **Análisis Estadístico:** Medición de latencia de red, tiempos de respuesta y volumen de mensajería.
+- **Aplicación principal:** Go, cliente-servidor mediante TCP.
+- **Autenticación:** FastAPI (Python). Emite y valida las sesiones; la sesión caduca tras 30 minutos de inactividad.
+- **Red:** OpenWrt (Raspberry Pi), OSPF, VLANs, EtherChannel, RSTP y VLSM.
+- **Análisis estadístico:** latencia, tiempos de respuesta y volumen de mensajería a partir del registro de actividad.
 
 ## Estructura del Repositorio
-- `/docs`: Documentos de la Fase 1 (PDFs) y Diagrama UML.
-- `/app-go`: Código fuente del sistema de correo interno en Go.
-- `/auth-service`: Servicio API REST para registro e inicio de sesión en FastAPI.
-- `/network`: Plan de direccionamiento IP, topologías y configuraciones de red.
-- `/research`: Datos, encuestas y análisis estadístico.
+- `docs/`: documentos de las Fases 1 y 2 y diagramas UML.
+- `app-go/`: código en Go, dividido en paquetes `cliente`, `servidor` y `modelos`. [COMPLETAR]
+- `auth-service/`: servicio de autenticación en FastAPI.
+- `network/`: direccionamiento IP, topologías y configuraciones de red.
+- `research/`: datos y análisis estadístico.
+
+## Configuración
+| Componente | Sede | IP | Puerto |
+|---|---|---|---|
+| MailServer (Go) | A | [COMPLETAR] | [COMPLETAR] |
+| FastAPI | A | [COMPLETAR] | [COMPLETAR] |
+| MailClient (Go) | B | [COMPLETAR] | no aplica |
+
+Variables o archivos de configuración: [COMPLETAR: por ejemplo, URL de FastAPI y puerto del servidor].
+
+## Requisitos previos
+- Go [COMPLETAR versión]
+- Python [COMPLETAR versión] y dependencias de `auth-service/requirements.txt`
+
+## Cómo ejecutar
+1. **FastAPI** (Sede A):
+   `cd auth-service && uvicorn [COMPLETAR] --host 0.0.0.0 --port [PUERTO]`
+2. **MailServer** (Sede A):
+   `cd app-go && go run ./servidor`
+3. **MailClient** (Sede B):
+   `cd app-go && go run ./cliente`
+
+## Documentación
+- Fase 1: `docs/Proyecto integrador fase 1.pdf`
+- Fase 2: `docs/[nombre del PDF de la Fase 2]`
+- Diagrama de clases actualizado: `docs/[nombre del diagrama]`
 
 ## Integrantes del Equipo y Roles
-- **Paula Doménica Cevallos Vacacela** – *Desarrolladora Lead Go / POO & Coordinación Técnica*
-- **Odalis Jamel Anangonó Sevillano** – *Especialista en Infraestructura, Redes & Seguridad*
-- **Keyla Antonella Imba Untuña** – *Analista Estadístico & Socio-Tecnológico*
-
-## Licencia
-Este proyecto se distribuye bajo los términos de la Licencia **MIT**. Para más detalles, consulta el archivo [LICENSE](./LICENSE).
+- **Paula Doménica Cevallos Vacacela** – Desarrolladora Lead Go / POO y Coordinación Técnica
+- **Odalis Jamel Anangonó Sevillano** – Especialista en Infraestructura, Redes y Seguridad
+- **Keyla Antonella Imba Untuña** – Analista Estadístico y Socio-Tecnológico
 
 ## Vídeo explicativo acerca de roles
 https://youtu.be/6H8S9G2ZL00?si=Lrfr2mipz3l5Dy1w
 
+## Licencia
+Proyecto distribuido bajo la Licencia **MIT**. Ver [LICENSE](./LICENSE).
+
 ## Declaración de Integridad Académica y Uso de IA
-Declaramos que el presente trabajo ha sido desarrollado colaborativamente por el equipo. Se han utilizado herramientas de Inteligencia Artificial (ej. ChatGPT, Gemini) de forma ética y complementaria como apoyo para la redacción de documentación, diseño estructural de código y depuración. La autoría y validación final corresponden íntegramente a las integrantes del grupo.
+[COMPLETAR: debe coincidir con el apartado 10 del documento de la Fase 2.]
