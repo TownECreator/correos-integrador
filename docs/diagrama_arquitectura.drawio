@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Proyecto Integrador Grupo 8">
+  <diagram id="diagrama_arquitectura" name="Pagina 1">
+    <mxGraphModel dx="1507" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="570" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=28;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Arquitectura cliente-servidor de correos internos - Grupo 8&lt;/b&gt;" vertex="1">
+          <mxGeometry height="48" width="1345" x="40" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="siteb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;verticalAlign=top;spacingTop=14;spacingLeft=20;dashed=1;dashPattern=7 5;strokeWidth=2;" value="&lt;b&gt;Sede B - equipo del empleado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="340" width="355" x="40" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="sitea" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;verticalAlign=top;spacingTop=14;spacingLeft=20;dashed=1;dashPattern=7 5;strokeWidth=2;" value="&lt;b&gt;Sede A - equipos y servicios de la organización&lt;/b&gt;" vertex="1">
+          <mxGeometry height="340" width="925" x="455" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEAF9;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=19;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Cliente Go&lt;/b&gt;&lt;br&gt;Interfaz de consola&lt;br&gt;MailClient / ConsoleUI" vertex="1">
+          <mxGeometry height="115" width="240" x="90" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF4E6;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Servidor Go&lt;/b&gt;&lt;br&gt;MailServer / HTTPHandlers&lt;br&gt;Operaciones de mensajería" vertex="1">
+          <mxGeometry height="135" width="258" x="495" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fastapi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0D6;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Servicio FastAPI&lt;/b&gt;&lt;br&gt;Autenticación y validación&lt;br&gt;de tokens y sesiones" vertex="1">
+          <mxGeometry height="112" width="285" x="930" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBE4FA;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Almacenamiento persistente&lt;/b&gt;&lt;br&gt;Mensajes y buzones&lt;br&gt;Archivo o base de datos" vertex="1">
+          <mxGeometry height="108" width="285" x="930" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="client_server" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=13;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeWidth=2;" target="server" value="HTTPS + JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="server_auth" edge="1" parent="1" source="server" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=13;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeWidth=2;" target="fastapi" value="HTTP(S) + JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="server_storage" edge="1" parent="1" source="server" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=13;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;strokeWidth=2;" target="storage" value="Lectura y escritura">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

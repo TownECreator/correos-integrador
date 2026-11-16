@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" agent="Proyecto Integrador Grupo 8">
+  <diagram id="diagrama_componentes" name="Pagina 1">
+    <mxGraphModel dx="2035" dy="1190" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1810" pageHeight="715" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=27;fontFamily=Arial;shadow=0;" value="&lt;b&gt;Diagrama UML de componentes del sistema - Grupo 8&lt;/b&gt;" vertex="1">
+          <mxGeometry height="48" width="1720" x="35" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="clientzone" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;verticalAlign=top;spacingTop=14;spacingLeft=20;dashed=1;dashPattern=7 5;strokeWidth=2;" value="&lt;b&gt;Cliente Go - Sede B&lt;/b&gt;" vertex="1">
+          <mxGeometry height="560" width="335" x="40" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="serverzone" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=middle;spacing=10;fontSize=18;fontFamily=Arial;shadow=0;verticalAlign=top;spacingTop=14;spacingLeft=20;dashed=1;dashPattern=7 5;strokeWidth=2;" value="&lt;b&gt;Servidor Go - Sede A&lt;/b&gt;" vertex="1">
+          <mxGeometry height="560" width="1080" x="420" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="console" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4F0FF;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Interfaz de consola&lt;/b&gt;&lt;br&gt;ConsoleUI" vertex="1">
+          <mxGeometry height="78" width="220" x="90" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="mailclient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4F0FF;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Cliente HTTP&lt;/b&gt;&lt;br&gt;MailClient" vertex="1">
+          <mxGeometry height="78" width="220" x="90" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4F0FF;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Buzón temporal&lt;/b&gt;&lt;br&gt;LocalMailbox" vertex="1">
+          <mxGeometry height="78" width="220" x="90" y="503" as="geometry" />
+        </mxCell>
+        <mxCell id="handlers" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F6EB;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Manejadores HTTP&lt;/b&gt;&lt;br&gt;HTTPHandlers" vertex="1">
+          <mxGeometry height="95" width="237" x="475" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Validación de sesión&lt;/b&gt;&lt;br&gt;SessionManager" vertex="1">
+          <mxGeometry height="94" width="240" x="827" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="accounts" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F6EB;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=16;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Cuentas y buzones&lt;/b&gt;&lt;br&gt;AccountManager / UserAccount" vertex="1">
+          <mxGeometry height="100" width="240" x="827" y="333" as="geometry" />
+        </mxCell>
+        <mxCell id="logs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E9FB;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Registro de actividad&lt;/b&gt;&lt;br&gt;ActivityLog" vertex="1">
+          <mxGeometry height="94" width="240" x="827" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="authclient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Conexión con FastAPI&lt;/b&gt;&lt;br&gt;AuthClient" vertex="1">
+          <mxGeometry height="94" width="245" x="1192" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E9FB;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=17;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Almacenamiento&lt;/b&gt;&lt;br&gt;Storage" vertex="1">
+          <mxGeometry height="94" width="245" x="1192" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="fastapi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=16;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Servicio FastAPI&lt;/b&gt;&lt;br&gt;Externo al servidor Go&lt;br&gt;Ubicado en Sede A" vertex="1">
+          <mxGeometry height="110" width="210" x="1565" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0E9FB;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=middle;spacing=10;fontSize=16;fontFamily=Arial;shadow=0;shape=component;" value="&lt;b&gt;Mensajes persistentes&lt;/b&gt;&lt;br&gt;Archivo o BD&lt;br&gt;Ubicado en Sede A" vertex="1">
+          <mxGeometry height="110" width="210" x="1565" y="491" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_0" edge="1" parent="1" source="console" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="mailclient" value="solicita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_1" edge="1" parent="1" source="console" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="cache" value="usa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="67" y="220" />
+              <mxPoint x="67" y="542" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dependency_2" edge="1" parent="1" source="mailclient" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="handlers" value="HTTP(S) / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_3" edge="1" parent="1" source="handlers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.18;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="sessions" value="valida">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_4" edge="1" parent="1" source="handlers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="accounts" value="opera">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_5" edge="1" parent="1" source="handlers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="logs" value="registra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_6" edge="1" parent="1" source="sessions" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="authclient" value="consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_7" edge="1" parent="1" source="authclient" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="fastapi" value="HTTP / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_8" edge="1" parent="1" source="accounts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="storage" value="guarda y recupera">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_9" edge="1" parent="1" source="storage" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.22;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="data" value="persiste">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency_10" edge="1" parent="1" source="logs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=block;endFill=1;dashed=1;" target="data" value="escribe eventos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
