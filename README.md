@@ -27,7 +27,7 @@ Plataforma de correo interno para dos sedes (A y B) interconectadas, sin depende
 ## Entregables por Fase
 
 ### Fase 2: Análisis y Requisitos
-- **Documento de análisis y requisitos:** [Ver Fase 2 (PDF)]([./docs/Proyecto_integrador_fase_2.pdf](https://github.com/TownECreator/correos-integrador/blob/main/docs/Proyecto%20integrador%20fase%202.pdf)) 
+- **Documento de análisis y requisitos:** [Ver Fase 2 (PDF)](https://github.com/TownECreator/correos-integrador/blob/main/docs/Proyecto%20integrador%20fase%202.pdf) 
 - **Contenido:** Definición de actores, alcance, requisitos funcionales (`RF-SW-01` a `RF-INT-01`), requisitos no funcionales (`RNF-01` a `RNF-07`), diagrama de casos de uso, fichas y matriz de trazabilidad inicial.
 
 ### Fase 3: Diseño de la Solución
