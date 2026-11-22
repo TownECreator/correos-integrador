@@ -18,7 +18,7 @@ Plataforma de correo interno para dos sedes (A y B) interconectadas, sin depende
 - **Cliente Go (`MailClient`):** Ejecutado en Sede B mediante interfaz de consola (`ConsoleUI`), conectándose a la dirección IP del servidor en Sede A.
 
 ## Estructura del Repositorio
-- `/docs`: Documentación del proyecto (PDFs de Fases 1, 2 y 3) y archivos editables de los diagramas UML.
+- `/docs`: Documentación del proyecto y archivos editables de los diagramas UML.
 - `/app-go`: Código fuente del sistema de correo interno en Go (`cmd/client`, `cmd/server`, `internal/cliente`, `internal/servidor`, `internal/modelos`).
 - `/auth-service`: Servicio API REST para registro e inicio de sesión en FastAPI.
 - `/network`: Plan de direccionamiento IP, topologías y configuraciones de red.
@@ -27,7 +27,7 @@ Plataforma de correo interno para dos sedes (A y B) interconectadas, sin depende
 ## Entregables por Fase
 
 ### Fase 2: Análisis y Requisitos
-- **Documento de análisis y requisitos:** [Ver Fase 2 (PDF)](./docs/Fase2_POO_Grupo8.pdf) *(ajustar nombre exacto si difiere en `/docs`)*
+- **Documento de análisis y requisitos:** [Ver Fase 2 (PDF)](./docs/Fase2_POO_Grupo8.pdf) 
 - **Contenido:** Definición de actores, alcance, requisitos funcionales (`RF-SW-01` a `RF-INT-01`), requisitos no funcionales (`RNF-01` a `RNF-07`), diagrama de casos de uso, fichas y matriz de trazabilidad inicial.
 
 ### Fase 3: Diseño de la Solución
